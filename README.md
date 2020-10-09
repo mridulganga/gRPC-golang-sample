@@ -10,7 +10,7 @@ go get google.golang.org/grpc
 ```
 
 
-## To compile to proto file
+## To compile the proto file
 ```bash
 protoc --go_out=plugins=grpc:. mathlib.proto
 ```
