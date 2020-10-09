@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package mathlib;
+
+service Math {
+    rpc Add (NumInput) returns (NumOutput);
+    rpc Substract(NumInput) returns (NumOutput);
+}
+
+message NumInput{
+    float n1 = 1;
+    float n2 = 2;
+}
+
+message NumOutput{
+    float ans = 1;
+}
